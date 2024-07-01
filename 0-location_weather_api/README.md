@@ -15,8 +15,8 @@ Follow these steps to get the project up and running on your local machine.
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/Wikki2000/HNG-internship_python/
+cd 0-location_weather_api
 ```
 
 ### 2. Build the Docker Image
@@ -30,11 +30,13 @@ docker build -t flask-app .
 Run the Docker container, exposing port 5000 from the container to your local machine.
 
 ## Project Structure
+```bash
 .
 ├── app.py                # Main Flask application file
 ├── Dockerfile            # Dockerfile for building the Docker image
 ├── requirements.txt      # List of Python dependencies
 └── README.md             # Project README file
+```
 
 ## Additional Notes
 Replace Mark in the URL with any name to customize the greeting message.
