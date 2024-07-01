@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import requests
+from os import environ
 
 app = Flask(__name__)
 
@@ -29,7 +30,7 @@ def hello():
 
     # Retrieve weather data based on latitude and longitude.
     if lat and lon:
-        api_key = "611a9d6d16a044f48f790317240107"
+        api_key = environ["API_KEY"]
         url = f'http://api.weatherapi.com/v1/current.json?key={api_key}&q={lat},{lon}'
         weather_response = requests.get(url)
         
