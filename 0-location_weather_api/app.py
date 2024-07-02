@@ -4,6 +4,10 @@ from os import environ
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return "Welcome to my page"
+
 @app.route('/api/hello')
 def hello():
     """
