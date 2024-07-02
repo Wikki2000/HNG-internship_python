@@ -23,7 +23,7 @@ def hello():
 
     # Mock IP for test and development purposes.
     # For production, remove or comment out the following line.
-    client_ip = "8.8.8.8"
+    # client_ip = "8.8.8.8"
 
     # Get geolocation and other data based on the client IP address.
     location_data = requests.get(f'http://ip-api.com/json/{client_ip}').json()
